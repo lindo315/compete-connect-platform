@@ -8,6 +8,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import Competitions from "./pages/Competitions";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 // Initialize the query client outside of the component
 const queryClient = new QueryClient();
@@ -22,6 +25,9 @@ const App = () => (
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/competitions" element={<Competitions />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
